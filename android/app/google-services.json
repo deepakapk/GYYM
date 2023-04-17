@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "548996661206",
+    "project_id": "gyym-9025c",
+    "storage_bucket": "gyym-9025c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548996661206:android:633bc6bbd9481e34f6ae77",
+        "android_client_info": {
+          "package_name": "com.example.gyym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548996661206-3ue6mvocr84016gglg2ge5ngc0ve4v1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC21431XED68evbTmJUWU_lj1i3IAdRU_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548996661206-3ue6mvocr84016gglg2ge5ngc0ve4v1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
