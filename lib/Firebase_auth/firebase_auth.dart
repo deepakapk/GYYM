@@ -24,7 +24,7 @@ class AuthMethods {
         // ! Create a user model
         UserModel um = UserModel(
           Username: username,
-          Email: email,
+          email: email,
           uid: cred.user!.uid,
           height: "0",
           weight: "0",
@@ -59,6 +59,11 @@ class AuthMethods {
       res = error.toString();
     }
     return res;
+  }
+
+  // !log out
+  Future signout() async {
+    await _auth.signOut();
   }
 
   // !get user details

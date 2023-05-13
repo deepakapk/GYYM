@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 class UserModel {
   final String Username;
-  final String Email;
+  final String email;
   final String uid;
   final String weight;
   final String height;
 
   const UserModel(
       {required this.Username,
-      required this.Email,
+      required this.email,
       required this.uid,
       required this.height,
       required this.weight});
@@ -18,7 +18,7 @@ class UserModel {
   Map<String, dynamic> toJson() => {
         'username': Username,
         'uid': uid,
-        'email': 'email',
+        'email': email,
         'height': height,
         'weight': weight,
       };
@@ -27,7 +27,7 @@ class UserModel {
     var snapshot = snap.data() as Map<String, dynamic>;
     return UserModel(
         Username: snapshot['username'],
-        Email: snapshot['email'],
+        email: snapshot['email'],
         uid: snapshot['uid'],
         height: snapshot['height'],
         weight: snapshot['weight']);

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gyym/providers/user_provider.dart';
+import 'package:provider/provider.dart';
 
 class ResponsiveScreen extends StatefulWidget {
   final Widget webScreen;
@@ -11,6 +13,16 @@ class ResponsiveScreen extends StatefulWidget {
 }
 
 class _ResponsiveScreenState extends State<ResponsiveScreen> {
+  @override
+  void initState() {
+    addData();
+    super.initState();
+  }
+
+  addData() async {
+    UserProvider _userProvider = Provider.of(context, listen: false);
+    await _userProvider.refreshUser();
+  }
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
